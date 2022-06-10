@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Jun 10 07:26:54 GMT 2022","Fri Jun 10 07:26:55 GMT 2022","411","","Отправляем http запросы","","Отправляем http запросы"," - no_email_address_spplied"," - no_email_address_spplied",""
+"passed","Fri Jun 10 07:26:56 GMT 2022","Fri Jun 10 07:26:56 GMT 2022","437","","Отправляем http запросы","","Отправляем http запросы","fake@mail. - format_not_valid","fake@mail. - format_not_valid",""
+"passed","Fri Jun 10 07:26:55 GMT 2022","Fri Jun 10 07:26:55 GMT 2022","423","","Отправляем http запросы","","Отправляем http запросы","fakemail.ru - format_not_valid","fakemail.ru - format_not_valid",""
+"passed","Fri Jun 10 07:26:56 GMT 2022","Fri Jun 10 07:26:57 GMT 2022","283","","Отправляем http запросы","","Отправляем http запросы","Проверка валидности email без api_key, get email_verification/check?email= 401","Проверка валидности email без api_key, get email_verification/check?email= 401",""
+"passed","Fri Jun 10 07:26:55 GMT 2022","Fri Jun 10 07:26:56 GMT 2022","416","","Отправляем http запросы","","Отправляем http запросы","@mail.ru - format_not_valid","@mail.ru - format_not_valid",""
+"passed","Fri Jun 10 07:26:56 GMT 2022","Fri Jun 10 07:26:56 GMT 2022","363","","Отправляем http запросы","","Отправляем http запросы","fake@.ru - format_not_valid","fake@.ru - format_not_valid",""
+"passed","Fri Jun 10 07:26:54 GMT 2022","Fri Jun 10 07:26:54 GMT 2022","745","","Отправляем http запросы","","Отправляем http запросы","Проверка валидности email, get email_verification/check?email= 200","Проверка валидности email, get email_verification/check?email= 200",""
