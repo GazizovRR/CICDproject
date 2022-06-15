@@ -23,7 +23,7 @@ describe('Отправляем http запросы', () => {
     ${'fake@.ru'}                   | ${'format_not_valid'}
     ${'fake@mail.'}                 | ${'format_not_valid'}
     `('$email - $expected', async ({ email, expected }) => {
-        const response = await Email.verificate(email)
+        const response = await Email.verificate(email, header.apilayer.apikey)
         const data = await response.json()
         expect(data.error.type).toEqual(expected)
     })
