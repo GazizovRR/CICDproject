@@ -1,13 +1,9 @@
 import fetch from 'node-fetch';
-import { urls, header } from '../config/index';
+import urls from '../config/urls';
 
 const Email = {
-    verificate: async(email) => {
-        const response = await fetch(`${urls.apilayer}email_verification/check?email=${email}`, { method: 'GET', headers: header.apilayer });
-        return response;
-    },
-    verificateWithoutAPIKey: async(email) => {
-        const response = await fetch(`${urls.apilayer}email_verification/check?email=${email}`, { method: 'GET' });
+    verificate: async(email, key='') => {
+        const response = await fetch(`${urls.apilayer}email_verification/check?email=${email}`, { method: 'GET', headers: { apikey: key } });
         return response;
     },
 };
