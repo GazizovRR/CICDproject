@@ -28,7 +28,7 @@ describe('Отправляем http запросы', () => {
         expect(data.error.type).toEqual(expected)
     })
 
-    test.only('Проверка валидности email без api_key, get email_verification/check?email= 401', async () => {
+    test('Проверка валидности email без api_key, get email_verification/check?email= 401', async () => {
         const emailData = new BuildMail().addUsername().addDomain().generate()
         const email = `${emailData.user}@${emailData.domain}`
 
