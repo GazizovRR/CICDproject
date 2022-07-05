@@ -6,7 +6,7 @@ describe('Отправляем http запросы', () => {
         const emailData = new BuildMail().addUsername().addDomain().generate()
         const email = `${emailData.user}@${emailData.domain}`
 
-        const response = await Email.verificate(email, header.apilayer.apikey)
+        const response = await Email.verificate(email, header.apilayer)
         const data = await response.json()
         
         expect(data.user).toEqual(emailData.user)
@@ -23,7 +23,7 @@ describe('Отправляем http запросы', () => {
     ${'fake@.ru'}                   | ${'format_not_valid'}
     ${'fake@mail.'}                 | ${'format_not_valid'}
     `('$email - $expected', async ({ email, expected }) => {
-        const response = await Email.verificate(email, header.apilayer.apikey)
+        const response = await Email.verificate(email, header.apilayer)
         const data = await response.json()
         expect(data.error.type).toEqual(expected)
     })
